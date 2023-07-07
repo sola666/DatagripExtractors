@@ -10,6 +10,16 @@ The collection includes the following extractors:
 - sql-string-list-nowrap: Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. No bracket wrapping.
 - sql-string-list-wrap: Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. Includes wrapping in brackets.
 
+| Extractor | Quotation | Row Prefix | Row Suffix | Output Prefix | Output Suffix |
+| --- | --- | --- | --- | --- | --- |
+| py-string-list-doublequote | Double quote (") | [ | ] | [ | ] |
+| py-string-list-singlequote | Single quote (') | [ | ] | [ | ] |
+| py-tuple-list-singlequote | Single quote (') | ( | ) | [ | ] |
+| py-tuple-list-doublequote | Double quote (") | ( | ) | [ | ] |
+| sql-string-list-nowrap | Single quote (') |  |  |  |  |
+| sql-string-list-wrap | Single quote (') | ( | ) | ( | ) |
+
+
 ## Installation
 To use these scripts, clone this repository or download the .groovy files directly. In DataGrip, open your project files and place the .groovy scripts in the below folder: 
 `Scratches and Consoles > Extensions > Database Tools and SQL > data > extractors`
