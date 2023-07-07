@@ -3,21 +3,14 @@ This repository contains a collection of Groovy data extractors for use with Jet
 
 ## Extractors
 The collection includes the following extractors:
-- py-string-list-doublequote: Formats data as a list of Python strings with double quotes.
-- py-string-list-singlequote: Formats data as a list of Python strings with single quotes.
-- py-tuple-list-singlequote: Formats each row as a Python tuple with single quotes inside, wrapped in a list.
-- py-tuple-list-doublequote: Formats each row as a Python tuple with double quotes inside, wrapped in a list.
-- sql-string-list-nowrap: Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. No bracket wrapping.
-- sql-string-list-wrap: Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. Includes wrapping in brackets.
-
-| Extractor | Quotation | Row Prefix | Row Suffix | Output Prefix | Output Suffix |
-| --- | --- | --- | --- | --- | --- |
-| py-string-list-doublequote | Double quote (") | [ | ] | [ | ] |
-| py-string-list-singlequote | Single quote (') | [ | ] | [ | ] |
-| py-tuple-list-singlequote | Single quote (') | ( | ) | [ | ] |
-| py-tuple-list-doublequote | Double quote (") | ( | ) | [ | ] |
-| sql-string-list-nowrap | Single quote (') |  |  |  |  |
-| sql-string-list-wrap | Single quote (') | ( | ) | ( | ) |
+| Extractor | Description | Quotation | Row Prefix | Row Suffix | Output Prefix | Output Suffix |
+| --- | --- | --- | --- | --- | --- | --- |
+| py-string-list-doublequote | Formats data as a list of Python strings with double quotes. | Double quote (") | [ | ] | [ | ] |
+| py-string-list-singlequote | Formats data as a list of Python strings with single quotes. | Single quote (') | [ | ] | [ | ] |
+| py-tuple-list-singlequote | Formats each row as a Python tuple with single quotes inside, wrapped in a list. | Single quote (') | ( | ) | [ | ] |
+| py-tuple-list-doublequote | Formats each row as a Python tuple with double quotes inside, wrapped in a list. | Double quote (") | ( | ) | [ | ] |
+| sql-string-list-nowrap | Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. No bracket wrapping. | Single quote (') |  |  |  |  |
+| sql-string-list-wrap | Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. Includes wrapping in brackets. | Single quote (') | ( | ) | ( | ) |
 
 
 ## Installation
