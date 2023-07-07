@@ -5,8 +5,8 @@ This repository contains a collection of Groovy data extractors for use with Jet
 The collection includes the following extractors:
 | Extractor | Description | Quotation | Row Prefix | Row Suffix | Output Prefix | Output Suffix |
 | --- | --- | --- | --- | --- | --- | --- |
-| py-string-list-doublequote | Formats data as a list of Python strings with double quotes. | Double quote (") | [ | ] | [ | ] |
-| py-string-list-singlequote | Formats data as a list of Python strings with single quotes. | Single quote (') | [ | ] | [ | ] |
+| py-string-list-doublequote | Formats data as a list of Python strings with double quotes. | Double quote (") |   |   | [ | ] |
+| py-string-list-singlequote | Formats data as a list of Python strings with single quotes. | Single quote (') |   |   | [ | ] |
 | py-tuple-list-singlequote | Formats each row as a Python tuple with single quotes inside, wrapped in a list. | Single quote (') | ( | ) | [ | ] |
 | py-tuple-list-doublequote | Formats each row as a Python tuple with double quotes inside, wrapped in a list. | Double quote (") | ( | ) | [ | ] |
 | sql-string-list-nowrap | Converts data into single quote strings, separated by a comma with no trailing comma for correct SQL formatting. No bracket wrapping. | Single quote (') |  |  |  |  |
